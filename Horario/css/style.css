@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.tabla-horario {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabla-horario th, .tabla-horario td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tabla-horario th {
+  background-color: #0073e6;
+  color: white;
+}
+
+.prog { background-color: #f8c1b1; }
+.sinf { background-color: #b8d1f0; }
+.lmsgi, .lmsgt { background-color: #b5e3ff; }
+.badat { background-color: #c9f5d1; }
+.endes { background-color: #f7ecb6; }
+.daspgs { background-color: #ffe599; }
+.sasp { background-color: #f4b6e5; }
+.ipe { background-color: #d9d2e9; }
