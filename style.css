@@ -7,27 +7,38 @@ body {
   text-align: center;
 }
 
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
 
-h1 {
+.cabecera h1 {
   color: #2518d6;
   font-size: 2rem;
-  margin: 20px 0;
+  margin: 0;
   letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+}
+
+.introduccion,
+.menu-actividades {
+  background: #ffffff;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 h2 {
   color: #000000;
   font-size: 1.6rem;
-  margin-top: 30px;
+  margin-top: 10px;
 }
-
-h5 {
-  color: #000000;
-  font-weight: normal;
-  letter-spacing: 3px;
-  margin: 10px 0;
-}
-
 
 p {
   font-size: 1rem;
@@ -36,4 +47,33 @@ p {
   max-width: 700px;
   margin: 10px auto;
   padding: 0 15px;
+}
+
+.menu-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.menu-lista li {
+  margin: 10px 0;
+}
+
+.menu-lista a {
+  color: #2518d6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-lista a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #ffffff;
+  border-top: 2px solid #ddd;
+  color: #555;
+  font-size: 0.9rem;
 }
