@@ -7,18 +7,91 @@ body {
   padding: 0;
 }
 
-/* Título principal */
-h1 {
-  color: #e67e22;
-  padding: 10px 0;
-  margin: 20px 0;
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 2px solid #e6cbb3;
 }
 
-p {
+.cabecera h1 {
+  color: #e67e22;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+main {
+  padding: 20px;
+}
+
+.presentacion {
+  background-color: #ffffff;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.presentacion p {
   color: #4b3832;
   font-size: 18px;
 }
 
-img {
+.presentacion img {
   margin-top: 10px;
+  border-radius: 8px;
+}
+
+.menu {
+  background-color: #ffffff;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.menu h2 {
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 12px 0;
+}
+
+.menu ul li a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.volver-caja {
+  margin-top: 30px;
+}
+
+.volver-caja a {
+  color: #d35400;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.volver-caja a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #7c5e50;
 }
