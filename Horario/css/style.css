@@ -3,6 +3,7 @@ body {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .tabla-horario {
@@ -32,3 +33,49 @@ body {
 .daspgs { background-color: #ffe599; }
 .sasp { background-color: #f4b6e5; }
 .ipe { background-color: #d9d2e9; }
+
+/* Estilo para el botón volver */
+.volver {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 12px 24px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.volver:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.volver:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .tabla-horario {
+    width: 98%;
+    font-size: 0.9rem;
+  }
+  
+  .tabla-horario th, .tabla-horario td {
+    padding: 8px 5px;
+  }
+  
+  .volver {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
