@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reseñas - Restaurante</title>
+    <link rel="stylesheet" href="css/reseñas.css">
+</head>
+<body>
+    <div class="formulario-container">
+        <h1>Formulario de Reseñas</h1>
+        <h2>Deja una reseña sobre un plato</h2>
+        
+        <form class="formulario-reseña" action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Tu nombre *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="¿Cómo te llamas?">
+            </div>
+            
+            <div class="form-group">
+                <label for="plato">Plato evaluado *</label>
+                <select id="plato" name="plato" required>
+                    <option value="">Selecciona un plato</option>
+                    <option value="tortilla">Tortilla de Patatas</option>
+                    <option value="boquerones">Boquerones Fritos</option>
+                    <option value="croquetas">Croquetas Caseras</option>
+                    <option value="paella">Paella Valenciana</option>
+                    <option value="gazpacho">Gazpacho Andaluz</option>
+                    <option value="flan">Flan de Huevo</option>
+                    <option value="otro">Otro plato</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Valoración *</label>
+                <div class="valoracion-options">
+                    <label class="opcion-valoracion">
+                        <input type="radio" name="valoracion" value="5" required> Excelente (5 estrellas)
+                    </label>
+                    <label class="opcion-valoracion">
+                        <input type="radio" name="valoracion" value="4"> Muy bueno (4 estrellas)
+                    </label>
+                    <label class="opcion-valoracion">
+                        <input type="radio" name="valoracion" value="3"> Bueno (3 estrellas)
+                    </label>
+                    <label class="opcion-valoracion">
+                        <input type="radio" name="valoracion" value="2"> Regular (2 estrellas)
+                    </label>
+                    <label class="opcion-valoracion">
+                        <input type="radio" name="valoracion" value="1"> Malo (1 estrella)
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha-visita">Fecha de tu visita (opcional)</label>
+                <input type="date" id="fecha-visita" name="fecha-visita">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Tu email (opcional)</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="titulo">Título de tu reseña *</label>
+                <input type="text" id="titulo" name="titulo" required placeholder="Ej: 'La mejor tortilla de Madrid'">
+            </div>
+            
+            <div class="form-group">
+                <label for="comentario">Tu reseña *</label>
+                <textarea id="comentario" name="comentario" rows="6" required placeholder="Describe tu experiencia..."></textarea>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="publicar-anonimo" name="publicar-anonimo">
+                <label for="publicar-anonimo">Publicar de forma anónima</label>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad *</label>
+            </div>
+            
+            <div class="botones-form">
+                <button type="submit" class="btn-submit">PUBLICAR RESEÑA</button>
+                <button type="reset" class="btn-reset">LIMPIAR</button>
+            </div>
+            
+            <div class="boton-volver">
+                <a href="index.html" class="btn-volver">Volver al inicio</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva - Restaurante</title>
+    <link rel="stylesheet" href="css/reserva.css">
+</head>
+<body>
+    <div class="formulario-container">
+        <h1>Formulario de Reserva</h1>
+        <h2>Haz una reserva</h2>
+        
+        <form class="formulario-reserva" action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Su nombre *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="clientes">Número de clientes *</label>
+                <select id="clientes" name="clientes" required>
+                    <option value="">Selecciona número</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="7">7 o más personas</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Su correo electrónico *</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Su teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+34 600 000 000">
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha de la reserva *</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="hora">Hora de la reserva *</label>
+                <input type="time" id="hora" name="hora" required min="13:00" max="23:00">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Su mensaje (opcional)</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Comentarios adicionales..."></textarea>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad *</label>
+            </div>
+            
+            <button type="submit" class="btn-submit">SOLICITAR RESERVA</button>
+            
+            <p class="nota">Si desea saber cómo protegemos sus datos, consulte nuestra política de privacidad.</p>
+            
+            <div class="boton-volver">
+                <a href="index.html" class="btn-volver">Volver al inicio</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
