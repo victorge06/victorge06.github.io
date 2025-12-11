@@ -7,18 +7,73 @@ body {
   padding: 0;
 }
 
-/* Título principal */
 h1 {
   color: #e67e22;
   padding: 10px 0;
   margin: 20px 0;
 }
 
+h2 {
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
 p {
   color: #4b3832;
-  font-size: 18px;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.caja {
+  background-color: #fff3e0;
+  border: 1px solid #e67e22;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+}
+
+ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol li {
+  margin-bottom: 5px;
 }
 
 img {
   margin-top: 10px;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e67e22;
 }
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #7f5e3b;
+  font-size: 14px;
+}
+
+a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #7f5e3b;
+}
+
