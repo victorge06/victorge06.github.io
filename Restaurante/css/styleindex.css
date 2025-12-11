@@ -13,6 +13,11 @@ header {
   border-bottom: 2px solid #e6cbb3;
 }
 
+.cabecera {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .cabecera h1 {
   color: #e67e22;
   margin: 0;
@@ -23,13 +28,15 @@ main {
   padding: 20px;
 }
 
-.presentacion {
+.caja {
   background-color: #ffffff;
   max-width: 850px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .presentacion p {
@@ -37,18 +44,18 @@ main {
   font-size: 18px;
 }
 
-.presentacion img {
+.presentacion img,
+.menu img {
   margin-top: 10px;
   border-radius: 8px;
+  max-width: 100%;
 }
 
-.menu {
-  background-color: #ffffff;
-  max-width: 850px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+figcaption {
+  font-style: italic;
+  color: #7f5e3b;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .menu h2 {
@@ -59,6 +66,9 @@ main {
 .menu ul {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  width: fit-content;
 }
 
 .menu ul li {
@@ -73,10 +83,6 @@ main {
 
 .menu ul li a:hover {
   text-decoration: underline;
-}
-
-.volver-caja {
-  margin-top: 30px;
 }
 
 .volver-caja a {
@@ -94,4 +100,17 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
   color: #7c5e50;
+}
+
+/* Listas ordenadas dentro de cajas */
+.caja ol {
+  list-style: decimal;
+  padding-left: 40px;
+  margin: 0 auto;
+  text-align: left;
+  width: fit-content;
+}
+
+.caja ol li {
+  margin-bottom: 8px;
 }
