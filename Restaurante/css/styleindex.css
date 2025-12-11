@@ -58,12 +58,27 @@ figcaption {
   margin-top: 5px;
 }
 
-.menu h2 {
+/* Estilos para ambas secciones - Ahora iguales */
+.menu,
+.contactanos {
+  background-color: #ffffff;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.menu h2,
+.contactanos h2 {
   color: #e67e22;
   margin-bottom: 20px;
 }
 
-.menu ul {
+.menu ol,
+.contactanos ol {
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -71,17 +86,20 @@ figcaption {
   width: fit-content;
 }
 
-.menu ul li {
+.menu ol li,
+.contactanos ol li {
   margin: 12px 0;
 }
 
-.menu ul li a {
+.menu ol li a,
+.contactanos ol li a {
   color: #e67e22;
   text-decoration: none;
   font-weight: bold;
 }
 
-.menu ul li a:hover {
+.menu ol li a:hover,
+.contactanos ol li a:hover {
   text-decoration: underline;
 }
 
@@ -109,6 +127,11 @@ footer {
   margin: 0 auto;
   text-align: left;
   width: fit-content;
+}
+
+.caja ol li {
+  margin-bottom: 8px;
+}
 }
 
 .caja ol li {
