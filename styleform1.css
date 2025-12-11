@@ -1,0 +1,126 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.cabecera h1 {
+  color: #2518d6;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contenedor-formulario {
+  background: #ffffff;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2518d6;
+  box-shadow: 0 0 0 2px rgba(37, 24, 214, 0.1);
+}
+
+button {
+  background-color: #2518d6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", Arial, sans-serif;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #1d12a8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2518d6;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Poppins", Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.volver:hover {
+  color: #1d12a8;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #ffffff;
+  border-top: 2px solid #ddd;
+  color: #555;
+  font-size: 0.9rem;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+@media (max-width: 650px) {
+  .contenedor-formulario {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
