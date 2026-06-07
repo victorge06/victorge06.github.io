@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Local Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Recetas</h1>
+
+    <div class="controles">
+
+        <div>
+            <label for="colorPar">Color filas pares:</label>
+
+            <select id="colorPar">
+                <option value="lightblue">Azul claro</option>
+                <option value="lightgreen">Verde claro</option>
+                <option value="lightyellow">Amarillo claro</option>
+                <option value="lightpink">Rosa claro</option>
+                <option value="lightgray">Gris claro</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="colorImpar">Color filas impares:</label>
+
+            <select id="colorImpar">
+                <option value="white">Blanco</option>
+                <option value="beige">Beige</option>
+                <option value="lavender">Lavanda</option>
+                <option value="mistyrose">Rosa suave</option>
+                <option value="honeydew">Verde suave</option>
+            </select>
+        </div>
+
+    </div>
+
+    <table id="tabla">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Receta</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Salmorejo</td>
+                <td>Tomate, aceite y pan</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Gachas</td>
+                <td>Harina, agua y azúcar</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Migas</td>
+                <td>Pan, ajo y aceite</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
